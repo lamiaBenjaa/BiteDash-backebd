@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>BiteDash | Dashboard | Sign Up</title>
 </head>
 <body>
     <div class="row  m-auto mt-3 shadow p-3 mb-5 bg-body-tertiary rounded-5" style="width: 90%;height:100%">
