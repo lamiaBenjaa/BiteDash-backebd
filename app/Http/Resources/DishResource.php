@@ -21,6 +21,7 @@ class DishResource extends JsonResource
             'name'=>$this->name,
             'price'=>$this->price,
             'description'=>$this->description,
+            'rating'=>$this->rating,
             'image'=>$this->image,
         ];
     }

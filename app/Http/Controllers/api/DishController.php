@@ -30,6 +30,7 @@ class DishController extends Controller
             'description'=>'nullable|max:255',
             'price' => 'required|regex:/^\d+(\.\d{1,2})?$/',
             'image'=> 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'rating'=> 'required|regex:/^\d+(\.\d+)?$/|min:1|max:5',
             'restaurant_id' =>'required|exists:restaurants,id',
             'categorie_id' =>'required|exists:categories,id',
         ]);
@@ -66,6 +67,7 @@ class DishController extends Controller
             'description'=>'nullable|max:255',
             'price' => 'required|regex:/^\d+(\.\d{1,2})?$/',
             'image'=> 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'rating'=> 'required|regex:/^\d+(\.\d+)?$/|min:1|max:5',
             'restaurant_id' =>'required|exists:restaurants,id',
             'categorie_id' =>'required|exists:categories,id',
         ]);
@@ -83,6 +85,7 @@ class DishController extends Controller
         $dish->name = $request->name;
         $dish->description = $request->description;
         $dish->price = $request->price;
+        $dish->rating = $request->rating;
         $dish->restaurant_id = $request->restaurant_id;
         $dish->categorie_id = $request->categorie_id;
 

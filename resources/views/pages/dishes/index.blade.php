@@ -21,6 +21,7 @@
                     <th class="text-center">Categorie</th>
                     <th class="text-center">Description</th>
                     <th class="text-center">Price</th>
+                    <th class="text-center">Rating</th>
                     <th class="text-center">Image</th>
                     <th class="text-center">Actions</th>
                 </tr>
@@ -51,6 +52,7 @@
 
                         <td class="text-center">{{Str::limit($dish->description,10)}}</td>
                         <td class="text-center">{{$dish->price}} $</td>
+                        <td class="text-center">{{$dish->rating}}</td>
 
                         <td class="text-center">
                             <img style="width: 70px;height:70px"

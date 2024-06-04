@@ -60,6 +60,15 @@
                         @enderror
                       </div>
                       <div class="mb-3">
+                        <label class="form-label">Rating</label>
+                        <input type="text" class="form-control" id="rating" name="rating" value="{{old('rating')}}" required min="1" max="5" step="1">
+                        @error('rating')
+                            <div class="text-danger">
+                               {{$message}}
+                            </div>
+                        @enderror
+                      </div>
+                      <div class="mb-3">
                         <label class="form-label">Image</label>
                         <input type="file" class="form-control" name="image" value="{{old('image')}}">
                         @error('image')

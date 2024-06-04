@@ -11,11 +11,12 @@
             </div>
              <div class="card-header ">ID : <span class="text-primary">{{$dish->id}}</span></div>
              <div class="card-body">
-              <h5 class="card-text">Description : <span class="text-primary">{{$dish->restaurant->name}}</span></h5>
-              <h5 class="card-text">Description : <span class="text-primary">{{$dish->categorie->name}}</span></h5>
+              <h5 class="card-text">Restarant : <span class="text-primary">{{$dish->restaurant->name}}</span></h5>
+              <h5 class="card-text">Categorie : <span class="text-primary">{{$dish->categorie->name}}</span></h5>
                <h5 class="card-title">Dish Name : <span class="text-primary">{{$dish->name}}</span></h5>
                <h5 class="card-text">Description : <span class="text-primary">{{$dish->description}}</span></h5>
                <h5 class="card-text">Price : <span class="text-primary">{{$dish->price}}</span></h5>
+               <h5 class="card-title">Rating : <span class="text-primary">{{$dish->rating}}</span></h5>
                <h5 class="card-text"><span class="text-primary">
                     <img style="width: 200px; height:200px;"
                      src="{{asset('storage/images/'.$dish->image)}}" alt="image">  
